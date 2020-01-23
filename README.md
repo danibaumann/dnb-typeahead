@@ -7,4 +7,4 @@
 Change the url string to your internal API relay in the dnb.js file. This needs to be done to avaoid CORS errors. Please also see the dnb-api Repo for further details.
 
 - Version: 0.1.0
-- License: &copy; by Bisnode.ch
+- License: © by Bisnode.ch
