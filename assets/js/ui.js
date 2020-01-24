@@ -5,6 +5,7 @@ class UI {
   showCompanyDetails(comps) {
     this.clearCompanyData();
     for (const rec of comps) {
+      this.clearAlert();
       const org = rec.organization;
       // console.log(organization.primaryName);
       // output to html

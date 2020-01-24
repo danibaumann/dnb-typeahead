@@ -6,7 +6,7 @@ const ui = new UI;
 const searchUser = document.getElementById('searchCompany');
 // Init a timeout variable to be used below
 let timeout = null;
-const keyupDelayInMilliseconds = 350;
+const keyupDelayInMilliseconds = 300;
 
 // Search input event listener
 searchUser.addEventListener('keyup', (e) => {
