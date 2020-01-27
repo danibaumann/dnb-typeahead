@@ -1,10 +1,10 @@
 # D&B Typeahead demo
 
-> This is a quick demo of a typeahead implementation done with D&B Direct+
+This is a quick demo of a typeahead implementation done with the [D&B Direct+ API](https://directplus.documentation.dnb.com/).
 
 ## Usage
 
-Change the url string to your internal API relay in the dnb.js file. This needs to be done to avaoid CORS errors. Please also see the dnb-api Repo for further details.
+Change the url string to your internal API proxy in the dnb.js file. This needs to be done to avaoid CORS errors. Please also see the dnb-api Repo for further details.
 
-- Version: 0.1.0
+- Version: 0.0.3
 - License: © by Bisnode.ch
