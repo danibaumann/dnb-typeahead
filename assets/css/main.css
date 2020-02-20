@@ -1,0 +1,6 @@
+#searchresults {
+  display: none;
+    background-color: #FFF;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+    z-index: 500;
+}
