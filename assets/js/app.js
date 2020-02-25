@@ -11,6 +11,7 @@ const country = document.getElementById('country');
 const state = document.getElementById('state');
 const zip = document.getElementById('zip');
 const registrationNumber = document.getElementById('registrationNumber');
+const jsonOutput = document.getElementById('json');
 
 // Init a timeout variable to be used below
 let timeout = null;
@@ -55,5 +56,6 @@ function fetchCompanyDetails(duns) {
     state.value = result.data.primaryAddress.addressLocality.name;
     zip.value = result.data.primaryAddress.postalCode;
     registrationNumber.value = result.data.registrationNumbers[0].registrationNumber;
+    jsonOutput.innerHTML = JSON.stringify(result, undefined, 2);
   });
 };

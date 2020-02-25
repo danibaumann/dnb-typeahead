@@ -23,7 +23,7 @@
                 simplify your onbarding process.</p>
         </div>
         <div class="row">
-            <div class="col-md-8 order-md-1">
+            <div class="col-md-6 order-md-1">
                 <h4 class="mb-3">Company search</h4>
                 <label for="firstName">Company name</label>
                 <input type="text" name="searchCompany" class="form-control" id="searchCompany"
@@ -40,7 +40,7 @@
                 </div>
                 <hr class="mb-4">
                 <h4 class="mb-3">Company details</h4>
-                <form class="needs-validation" novalidate="">
+                <form class="needs-validation" novalidate="" id="signupForm">
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">First name</label>
@@ -118,6 +118,10 @@
                     <hr class="mb-4">
                     <button class="btn btn-primary btn-lg btn-block" type="submit">Create Account</button>
                 </form>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h4 class="mb-3">Raw data received</h4>
+                <pre id='json'>no data selected</pre>
             </div>
         </div>
     </div>
