@@ -1,8 +1,11 @@
 class DnB {
   constructor() {
-    this.yourHost = 'localhost:3000';
-    this.searchURL = `${this.yourhost}/v1/search`;
-    this.matchURL = `${this.yourhost}/v1/match`;
+    this.host = '10.0.100.22';
+    this.port = 3000;
+    this.protocol = 'http';
+    this.baseURL = `${this.protocol}://${this.host}:${this.port}`;
+    this.searchURL = `${this.baseURL}/v1/search`;
+    this.matchURL = `${this.baseURL}/v1/match`;
   }
 
   async getCompany(searchText) {
