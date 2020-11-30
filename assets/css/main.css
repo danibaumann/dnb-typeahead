@@ -1,10 +1,36 @@
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.navbar {
+  color: white;
+  background-color: #242b43;
+}
+.internal-view {
+  background-color: lightgray;
+}
+
 #searchresults {
   display: none;
-    background-color: #FFF;
-    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
-    z-index: 500;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 500;
+  width: 94%;
 }
 #json {
   background-color: #fcfcfc;
-  border:1px solid #efefef;
+  border: 1px solid #efefef;
+}
+
+#network-indicator {
+  color: white;
+}
+#network-indicator.loading {
+  color: red;
+}
+
+.row {
+  margin-bottom: 4rem;
 }

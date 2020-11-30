@@ -1,43 +1,44 @@
 class DnB {
   constructor() {
-    this.host = '10.0.100.22';
-    this.port = 3000;
-    this.protocol = 'http';
-    this.baseURL = `${this.protocol}://${this.host}:${this.port}`;
-    this.searchURL = `${this.baseURL}/v1/search`;
-    this.matchURL = `${this.baseURL}/v1/match`;
+    this.host = "api.fsas.dev.screenstyle.ch"
+    this.port = 443
+    this.protocol = "https"
+    this.baseURL = `${this.protocol}://${this.host}:${this.port}`
+    this.searchURL = `${this.baseURL}/v1/search`
+    this.matchURL = `${this.baseURL}/v1/match`
+    this.cmpelkURL = `${this.baseURL}/v1/data/duns`
   }
 
   async getCompany(searchText) {
     const headers = new Headers({
-      'Content-Type': 'application/json',
-    });
+      "Content-Type": "application/json",
+    })
     const companyResponse = await fetch(
       `${this.searchURL}/typeahead?searchTerm=${searchText}`,
       {
         headers,
       }
-    );
+    )
 
-    const data = await companyResponse.json();
+    const data = await companyResponse.json()
 
-    return data;
+    return data
   }
 
   // fetch company details based on duns number
   async getCompanyDetailsForDuns(duns) {
-    console.log(`will fetch company details for DUNS ${duns}`);
+    console.log(`will fetch company details for DUNS ${duns}`)
     const headers = new Headers({
-      'Content-Type': 'application/json',
-    });
+      "Content-Type": "application/json",
+    })
     const companyDetails = await fetch(
-      `${this.matchURL}/cleanseMatch?duns=${duns}`,
+      `${this.cmpelkURL}/${duns}?productId=cmpelk&versionId=v2&tradeUp=hq&customerReference=customer%20reference%20text`,
       {
         headers,
       }
-    );
-    const data = await companyDetails.json();
+    )
+    const data = await companyDetails.json()
 
-    return data;
+    return data
   }
 }
