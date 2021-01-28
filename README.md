@@ -4,7 +4,7 @@ This is a quick demo of a typeahead implementation done with the [D&B Direct+ AP
 
 ## Usage
 
-Change the 'this.host', 'this.port' and 'this.protocol' variables to your internal API proxy in the dnb.js file. This needs to be done to avaoid CORS errors. Please also see the dnb-api Repo for further details.
+Change the 'this.host', 'this.port' and 'this.protocol' variables to your internal API proxy in the dnb.js file. Please also see the [dnb-api-relay Repo](https://github.com/danibaumann/dnb-api-relay) for further details.
 
 - Version: 0.1.0
 - License: MIT
